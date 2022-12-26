@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    width: 1144px;
+    margin: 0 auto;
+}
+
+.header {
+    padding: 120px 0 144px;
+    background: url('../img/bg-header.jpg') center center/cover no-repeat;
+}
+.header__title {
+    font-weight: 500;
+    font-size: 54px;
+    line-height: 63px;
+    color: #003395;
+    margin-bottom: 26px;
+}
+.header__text {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 100%;
+}
+
+.nav {
+    padding: 27px 0 26px;
+    height: 75px;
+    background: #003395;
+}
+.menu__item {
+    display: inline-block;
+    margin-right: 62px;
+}
+.menu__link {
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+}
+
+.main {
+    padding: 57px 0 62px;
+}
+.left__col {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 23px;
+}
+.main__block {
+    width: 754px;
+    margin-bottom: 34px;
+}
+.main__block-title {
+    padding: 13px 0 15px;
+    border-top: 2px solid #003395;
+    border-bottom: 2px solid #003395;
+    margin-bottom: 16px;
+
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 32px;
+    color: #003395;
+}
+.main__block-text {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #30233D;
+}
+.main__block-text a {
+    text-decoration: underline;
+    color: #003395;
+}
+
+.right__col {
+    display: inline-block;
+}
+.news__block {
+    padding: 19px 19px 26px;
+    width: 362px;
+    border: 2px solid #33008D;
+    margin-bottom: 55px;
+}
+.news__block-title {
+    padding: 14px 17px;
+    background: #24B0FF;
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 32px;
+    color: #FFFFFF;
+}
+.news__block-text {
+    margin-top: 14px;
+    font-weight: 400;
+    font-size: 16.2px;
+    line-height: 163.35%;
+    color: #30233D;
+}
+.news__block-links {
+    margin-top: 22px;
+}
+.news__block-link {
+    display: block;
+    font-weight: 400;
+    font-size: 16.2px;
+    line-height: 163.35%;
+    text-decoration-line: underline;
+    color: #30233D;
+}
+
+.footer {
+    padding: 45px 0 83px;
+    background: linear-gradient(180deg, #003395 0%, #00205F 100%);
+}
+.footer__text {
+    font-weight: 400;
+    font-size: 11.7px;
+    line-height: 163.35%;
+    text-align: right;
+    color: #FCFCFC;
+}
