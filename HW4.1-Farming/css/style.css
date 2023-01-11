@@ -1,0 +1,149 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body
+{
+    background: url('../img/grapes.png') top right/cover no-repeat;
+    background-size: 655px 811px;
+    background-color: #FFFAF3;
+}
+
+ul
+{
+    list-style-type: none;
+}
+
+a
+{
+    text-decoration: none;
+    color: #000;
+}
+
+.container
+{
+    max-width: 1078px;
+    margin: 0 auto;
+}
+
+
+.header__wrapper
+{
+    padding: 43px 0 40px;
+    width: 470px;
+    border-bottom: 2px solid #C08D5D;
+}
+.header__logo-link, .nav, .menu__item
+{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.header__logo-link
+{
+    width: 39px;
+    height: 59px;
+    margin-right: 78px;
+}
+.header__logo-link img
+{
+    width: 39px;
+    height: 59px;
+}
+.menu__item
+{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    margin-right: 48px;
+
+}
+.menu__item:last-child
+{
+    margin-right: 0;
+}
+.active
+{
+    color: #C08D5D;
+}
+
+.main
+{
+    padding: 120px 0 69px;
+}
+.main__title
+{
+    width: 355px;
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 83px;
+    letter-spacing: 0.06em;
+    color: #3F4042;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+.main__title span
+{
+    font-family: 'Yeseva One';
+    font-size: 50px;
+    line-height: 58px;
+    text-transform: none;
+    margin-bottom: 33px;
+}
+.main__title span::after
+{
+    content: url('../icons/logo.svg');
+    display: inline-block;
+    vertical-align: sub;
+    height: 69px;
+}
+.main__text
+{
+    margin-top: 20px;
+    width: 535px;
+    font-size: 18px;
+    line-height: 147.6%;
+    letter-spacing: 0.06em;
+    color: #3F4042;
+}
+
+.main__btn
+{
+    height: 66px;
+    margin-top: 73px;
+    padding-left: 13px;
+    display: inline-block;
+    background: transparent;
+    border: 2px solid #C08D5D;
+
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 63px;
+    letter-spacing: 0.06em;
+    color: #3F4042;
+    outline: none;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+.main__btn::after
+{
+    content: url('../icons/arrow.svg');
+    display: inline-block;
+    width: 61px;
+    height: 64px;
+    background-color: #C08D5D;
+    text-align: center;
+    margin-left: 8px;
+}
+.main__mouse
+{
+    display: block;
+    margin: 60px auto 0;
+}
