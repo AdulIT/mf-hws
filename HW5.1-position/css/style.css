@@ -4,9 +4,89 @@
     margin: 0;
     border: 0;
     box-sizing: border-box;
+    font-family: 'Play', sans-serif;
 }
 
 body
 {
+    position: relative;
+    padding: 104px 0 0 0;
     background: #7CDAEF;
+}
+.main
+{
+    position: relative;
+    padding: 99px 79px 176px 72px;
+    margin: 0 auto;
+    width: 900px;
+    background: rgba(14, 73, 126, 0.7);
+    color: #FFFFFF;
+}
+.main__cloud-1
+{
+    position: absolute;
+    top: 45px;
+    right: 158px;
+    z-index: 5;
+}
+
+.main__cloud-2
+{
+    position: absolute;
+    left: 101px;
+    top: 283px;
+    z-index: -1;
+}
+
+.main__cloud-3
+{
+    position: absolute;
+    top: 554px;
+    right: 100px;
+    z-index: -1;
+}
+.main__title
+{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 46px;
+    margin-bottom: 24px;
+}
+.main__text
+{
+    width: 743px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    margin-bottom: 26px;
+}
+.main__text:last-child
+{
+    margin-bottom: 36px;
+}
+
+.gallery__title
+{
+    font-size: 32px;
+    line-height: 37px;
+    margin-bottom: 51px;
+}
+.gallery__img
+{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footer
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.grass
+{
+    width: 1470px;
+    height: 132px;
+    background: url('../img/grass.png') bottom left/cover no-repeat;
 }
