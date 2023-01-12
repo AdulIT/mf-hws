@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;500;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="flex-container">
+                <a href="#" class="header__logo">MyFreedomIT</a>
+                <nav class="nav">
+                    <ul class="menu">
+                        <li class="menu__item"><a href="#" class="menu__link">Home</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Technologies</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">About</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Contact Us</a></li>
+                    </ul>
+                </nav>
+                <div class="header__contacts">
+                    <img src="icons/phone.svg" alt="phone-icon" class="header__contacts-icon">
+                    <a href="tel:+375292561679" class="header__contacts-tel">+375 29 256 16 79</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="first-page">
+            <div class="container">
+                <h1 class="first-page__title">Responsive Layout</h1>
+                <p class="first-page__descr">Responsive websites respond to the size of the browser.</p>
+            </div>
+        </section>
+
+        <section class="info">
+            <div class="container">
+                <h2 class="info__title">Remember:</h2>
+                <p class="info__text">
+                    Both responsive and adaptive designs are the same in that they are methods for dealing with the reality that websites are often viewed on different devices in different contexts. 
+                </p>
+
+                <div class="info__flex-container flex-container">
+                    <div class="info__flex-item">
+                        <img src="icons/html.svg" alt="" class="info__flex-item__img">
+                        <h3 class="info__flex-item__title">HTML</h3>
+                        <p class="info__flex-item__text">
+                            HyperText Markup Language, gives content structure and meaning by defining that content as, for example, headings, paragraphs, 
+                            or images.
+                        </p>
+                    </div>
+                    <div class="info__flex-item">
+                        <img src="icons/css.svg" alt="" class="info__flex-item__img">
+                        <h3 class="info__flex-item__title">CSS</h3>
+                        <p class="info__flex-item__text">
+                            Cascading Style Sheets, is a presentation language created to style the appearance of content—using, for example, fonts or colors.
+                        </p>
+                    </div>
+                    <div class="info__flex-item">
+                        <img src="icons/bootstrap.svg" alt="" class="info__flex-item__img">
+                        <h3 class="info__flex-item__title">Bootstrap</h3>
+                        <p class="info__flex-item__text">
+                            Bootstrap is an open-source Javascript framework developed by the team at Twitter. It is a combination of HTML, CSS, and Javascript code designed to help build user interface components.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="flex-container">
+                <img src="icons/code.svg" alt="code" class="footer__logo">
+                <p class="footer__text">
+                    © 2019 Code 0.1. All right reserved.
+                </p>
+                <div class="footer__social-icons">
+                    <img src="icons/instagram.svg" alt="instagram" class="footer__social-icon">
+                    <img src="icons/vk.svg" alt="vk" class="footer__social-icon">
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
