@@ -22,27 +22,35 @@ body
     background: rgba(14, 73, 126, 0.7);
     color: #FFFFFF;
 }
-.main__cloud-1
+
+.container
+{
+    width: 900px;
+    margin: 0 auto;
+    position: relative;
+}
+.cloud
 {
     position: absolute;
-    top: 45px;
-    right: 158px;
+}
+.main__cloud-1
+{
+    top: -60px;
+    right: -156px;
     z-index: 5;
 }
 
 .main__cloud-2
 {
-    position: absolute;
-    left: 101px;
-    top: 283px;
+    left: -205px;
+    top: 184px;
     z-index: -1;
 }
 
 .main__cloud-3
 {
-    position: absolute;
-    top: 554px;
-    right: 100px;
+    top: 450px;
+    right: -208px;
     z-index: -1;
 }
 .main__title
@@ -77,15 +85,12 @@ body
     margin-right: 10px;
 }
 
-.footer
+
+.grass
 {
     position: absolute;
     bottom: 0;
     left: 0;
-}
-
-.grass
-{
     width: 1470px;
     height: 132px;
     background: url('../img/grass.png') bottom left/cover no-repeat;
