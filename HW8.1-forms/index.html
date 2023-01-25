@@ -5,8 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+    <div class="container">
+        <h1 class="title">Пожалуйста, укажите Ваше имя и фамилию.</h1>
+        <p class="text">
+            Чтобы облегчить общение и поиск друзей, у нас приняты настоящие имена и фамилии.
+        </p>
+
+        <form action="#" class="form">
+                
+            <input class="form__input" type="text" name="name" placeholder="Ваше имя">
+            
+            <input class="form__input" type="text" name="surname" placeholder="Ваша фамилия">
+
+            <p class="form__date">Дата рождения</p>
+
+            <div class="form__selects">
+                <select name="day" id="day" class="form__select">
+                    <option value="Day" class="form__select-option">День</option>
+                    <option value="1" class="form__select-option">1</option>
+                    <option value="2" class="form__select-option">2</option>
+                    <option value="3" class="form__select-option">3</option>
+                </select>
+        
+                <select name="month" id="month" class="form__select">
+                    <option value="Month" class="form__select-option">Месяц</option>
+                    <option value="May" class="form__select-option">Май</option>
+                    <option value="October" class="form__select-option">Октябрь</option>
+                    <option value="March" class="form__select-option">Март</option>
+                </select>
+                
+                <select name="year" id="year" class="form__select">
+                    <option value="Year" class="form__select-option">Год</option>
+                    <option value="2000" class="form__select-option">2000</option>
+                    <option value="2001" class="form__select-option">2001</option>
+                    <option value="2002" class="form__select-option">2002</option>
+                </select>
+            </div>
+
+            <button class="form__btn">Зарегистрироваться</button>
+
+            <p class="form__text">или</p>
+
+            <button class="form__btn fb">Продолжить с Facebook</button>
+        </form>
+    </div>
 </body>
 </html>

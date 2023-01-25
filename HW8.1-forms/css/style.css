@@ -3,6 +3,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 a
@@ -17,4 +18,109 @@ body
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #F5F8FA;
+}
+
+input, button, select
+{
+    outline: none;
+    border: none;
+}
+
+.container
+{
+    padding: 20px 0;
+    width: 40%;
+    text-align: center;
+}
+
+.title
+{
+    font-size: 1rem;
+    line-height: 24px;
+}
+.text
+{
+    margin: 10px auto;
+    font-size: 0.9rem;
+    line-height: 20px;
+    width: 470px;
+}
+
+.form
+{
+    width: 50%;
+    margin: 20px auto 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.form__input
+{
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #CCCFD3;
+    border-radius: 3px;
+    margin-bottom: 15px;
+}
+.form__date, .form__text
+{
+    align-self: start;
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: #A4A7A9;
+    margin-bottom: 15px;
+}
+
+.form__selects
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.form__select
+{
+    padding: 10px;
+    border: 1px solid #CCCFD3;
+    border-radius: 3px;
+    margin-bottom: 15px;
+}
+
+.form__btn
+{
+    padding: 10px;
+    width: 100%;
+    background-color: #5FB051;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+.form__text
+{
+    align-self: center;
+    position: relative;
+}
+
+.form__text::after, .form__text::before
+{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 1px;
+    background-color: #D9DCDE;
+    right: 150%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.form__text::before
+{
+    left: 150%;
+}
+.fb
+{
+    background-color: #4167B3;
 }
