@@ -118,11 +118,21 @@ button
     border-bottom: 3px solid #F1CDB3;
 }
 
+.active
+{
+    display: block;
+}
+
+.hamburger
+{
+    display: none;
+}
+
 .first-page
 {
     position: relative;
     padding-top: 180px;
-    height: 908px;
+    min-height: 908px;
     background: radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
 }
 
@@ -262,6 +272,11 @@ button
     height: 52px;
     border: 2px solid #F1CDB3;
     border-radius: 100px;
+}
+
+.friends__arr
+{
+    display: none;
 }
 
 .friends__btn
@@ -430,4 +445,249 @@ button
     line-height: 115%;
     letter-spacing: 0.06em;
     color: #F1CDB3;
+}
+
+
+@media screen and (max-width: 1200px)
+{
+    .container
+    {
+        width: 960px;
+    }
+    .first-page__img-block
+    {
+        width: 569px;
+        align-self: end;
+    }
+    .friends__carousel {
+        width: 840px;
+    }
+}
+
+@media screen and (max-width: 991px)
+{
+    .container
+    {
+        width: 720px;
+    }
+    .first-page .flex-container
+    {
+        flex-direction: column;
+        gap: 100px;
+    }
+    .first-page__img-block {
+        width: 569px;
+        height: 593px;
+        align-self: end;
+    }
+
+    .about .flex-container
+    {
+        flex-direction: column-reverse;
+        gap: 80px;
+    }
+
+    .friends__carousel
+    {
+        width: 580px;
+    }
+    .friends__carousel-item:nth-child(3)
+    {
+        display: none;
+    }
+
+    .help__flex-container {
+        margin: 0 auto;
+        justify-content: space-between;
+        gap: 55px 60px;
+    }
+    .help__type
+    {
+        width: 170px;
+    }
+
+    .donation .flex-container
+    {
+        flex-direction: column-reverse;
+        gap: 60px;
+    }
+
+    .footer .flex-container
+    {
+        flex-wrap: wrap;
+        gap: 65px 60px;
+    }
+    .footer__img
+    {
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+    .container
+    {
+        width: 540px;
+    }
+
+    .nav
+    {
+        display: none;
+    }
+
+    .hamburger
+    {
+        width: 30px;
+        height: 22px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .hamburger span
+    {
+        width: 100%;
+        height: 2px;
+        background-color: #F1CDB3;
+    }
+
+    .friends__carousel
+    {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .friends__carousel-item:nth-child(2) {
+        display: none;
+    }
+    /* .help__flex-container {
+        margin: 0 auto;
+        justify-content: space-between;
+        gap: 55px 60px;
+    }
+    .help__type
+    {
+        width: 170px;
+    } */
+
+    .footer .flex-container
+    {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 576px)
+{
+    .container
+    {
+        width: 300px;
+    }
+
+    .first-page
+    {
+        min-height: 818px;
+    }
+    .first-page__img-block
+    {
+        width: 260px;
+        height: 271px;
+    }
+    .first-page__text, .friends__title
+    {
+        width: auto;
+        text-align: center;
+    }
+    .title
+    {
+        font-size: 25px;
+    }
+    .about
+    {
+        padding: 80px 15px 100px;
+    }
+    .about__text
+    {
+        width: auto;
+    }
+    .about__text-title
+    {
+        margin: 0 auto;
+        width: 223px;
+        text-align: center;
+    }
+    .about__text-descr
+    {
+        margin: 25px auto 0;
+        width: 270px;
+        text-align: justify;
+    }
+
+    .about .flex-container
+    {
+        justify-content: center;
+    }
+
+    .help__flex-container {
+        margin: 0 auto;
+        justify-content: space-between;
+        gap: 55px 30px;
+    }
+    .help__type
+    {
+        width: 130px;
+        height: 87px;
+    }
+    .help__type-name
+    {
+        font-size: 15px;
+    }
+
+    .hidden-sm
+    {
+        display: none;
+    }
+
+    .friends .flex-container
+    {
+        margin: 42px 0 20px 0;
+    }
+    .friends__arr
+    {
+        margin: 0 auto 42px;
+        width: 184px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .donation__text
+    {
+        width: 100%;
+    }
+    .donation__text-title
+    {
+        width: 206px;
+        text-align: center;
+        margin: auto;
+    }
+    .donation__text-name
+    {
+        letter-spacing: 0;
+        text-align: center;
+    }
+    .donation__text-card
+    {
+        margin: 20px auto 0;
+        width: 281px;
+        height: 43px;
+    }
+    .donation__text-card__number
+    {
+        font-size: 15px;
+    }
+    .donation__text-info
+    {
+        margin: 20px auto 0;
+        width: 280px;
+        text-align: justify;
+    }
 }
