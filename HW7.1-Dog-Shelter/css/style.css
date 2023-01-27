@@ -111,7 +111,7 @@ button
     font-size: 15px;
     line-height: 160%;
     color: #CDCDCD;
-    transition: 0.8s all;
+    transition: 0.3s all;
 }
 .menu__item:hover
 {
@@ -130,7 +130,7 @@ button
 
 .first-page
 {
-    position: relative;
+    /* position: relative; */
     padding-top: 180px;
     min-height: 908px;
     background: radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
@@ -523,8 +523,12 @@ button
     }
 }
 
-@media screen and (max-width: 768px)
+@media screen and (max-width: 767px)
 {
+    body
+    {
+        position: relative;
+    }
     .container
     {
         width: 540px;
@@ -533,21 +537,69 @@ button
     .nav
     {
         display: none;
+        right: -100%;
+    }
+
+    .header__logo
+    {
+        left: 0;
+        top: 30px;
+        position: absolute;
+        z-index: 10;
     }
 
     .hamburger
     {
+        position: absolute;
         width: 30px;
         height: 22px;
+        top: 30px;
+        right: 0;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        z-index: 10;
+        transition: rotate 0.8s ease-in;
     }
     .hamburger span
     {
         width: 100%;
         height: 2px;
         background-color: #F1CDB3;
+    }
+
+    .hamburger__active
+    {
+        transform: rotate(90deg);
+    }
+
+    .nav__active
+    {
+        padding: 248px 39px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 320px;
+        height: 100vh;
+
+        background-color: #292929;
+        z-index: 5;
+    }
+    .nav__active .menu
+    {
+        display: flex;
+        flex-direction: column;
+        width: 327px;
+    }
+    .nav__active .menu__item
+    {
+        font-family: 'Arial';
+        font-weight: 400;
+        font-size: 32px;
+        color: #FAFAFA;
     }
 
     .friends__carousel
