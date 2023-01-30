@@ -97,6 +97,7 @@ input, button, select
     color: #fff;
     border-radius: 3px;
     margin-bottom: 10px;
+    cursor: pointer;
 }
 
 .form__text
