@@ -1,0 +1,53 @@
+.footer
+{
+    padding: 109px 0;
+    position: relative;
+    height: 451px;
+    background: linear-gradient(183.41deg, #67C3F3 -8.57%, #5A98F2 82.96%);
+    overflow: hidden;
+    &__bg-bottom
+    {
+        position: absolute;
+        left: -19px;
+        bottom: -19px;
+    }
+    &-logo
+    {
+        &__name
+        {
+            color: #fff;
+        }
+    }
+    &__about
+    {
+        width: 391px;
+        margin-right: 145px;
+        &-text
+        {
+            margin: 17px 0 31px;
+            @include text($lh: 28px, $color: #fff);
+        }
+        &-copyright
+        {
+            @include text($lh: 28px, $fz: 16px, $color: #fff);
+        }
+    }
+    &__company
+    {
+        &-title
+        {
+            @include title($fz: 20px, $lh: 60px, $color: #fff);
+        }
+
+    }
+    &__menu
+    {
+        height: 152px;
+        @include flex($fd: column, $jc: space-between);
+        &-link
+        {
+            @include text($fz: 18px, $lh: 38px, $color: #fff);
+        }
+    }
+    
+}

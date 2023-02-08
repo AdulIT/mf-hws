@@ -1,0 +1,79 @@
+@import './_base/mixins';
+@import './_base/variables';
+
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+}
+
+body
+{
+    overflow-x: hidden;
+}
+
+ul,
+ol,
+li
+{
+    list-style-type: none;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+img
+{
+    max-width: 100%;
+}
+
+button
+{
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.container
+{
+    width: 1220px;
+    margin: 0 auto;
+}
+
+.flex-container
+{
+    @include flex($ai: center, $jc: space-between);
+}
+
+.btn
+{
+    @include btn;
+}
+
+.logo
+{
+    width: 160px;
+    @include flex($ai: center, $jc: space-between);
+    cursor: pointer;
+    &-name
+    {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 30px;
+        color: $logo-text-color;
+    }
+}
+
+@import './_blocks/header';
+@import './_blocks/healthcare';
+@import './_blocks/services';
+@import './_blocks/providers';
+@import './_blocks/mobile';
+@import './_blocks/feedback';
+@import './_blocks/articles';
+@import './_blocks/footer';

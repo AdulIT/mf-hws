@@ -36,6 +36,10 @@ body
     width: 1500px;
 }
 
+.btn__warning
+{
+    background-color: #e4a01c;
+}
 tbody th
 {
     padding: 15px !important;

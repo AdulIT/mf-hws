@@ -1,0 +1,29 @@
+.mobile
+{
+    padding-top: 229px;
+    .flex-container
+    {
+        margin-left: 90px;
+    }
+    &__title
+    {
+        width: 254px;
+        @include title;
+        &:after
+        {
+            @include after($m: 30px 0 31px);
+        }
+    }
+    &__text
+    {
+        width: 363px;
+        margin-bottom: 40px;
+        @include text;
+    }
+    &__btn::after
+    {
+        content: url('../../icons/download.svg');
+        display: block;
+        margin-left: 15px;
+    }
+}

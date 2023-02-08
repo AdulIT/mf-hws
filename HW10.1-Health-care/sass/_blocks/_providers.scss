@@ -1,0 +1,23 @@
+.providers
+{
+    min-height: 477px;
+    .flex-container
+    {
+        gap: 87px;
+    }
+    &__title
+    {
+        width: 332px;
+        @include title;
+        &:after
+        {
+            @include after($m: 26px 0 31px)
+        }
+    }
+    &__text
+    {
+        width: 393px;
+        margin-bottom: 37px;
+        @include text;
+    }
+}

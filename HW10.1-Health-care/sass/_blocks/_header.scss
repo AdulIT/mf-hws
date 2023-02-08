@@ -1,0 +1,22 @@
+.header
+{
+    padding-top: 56px;
+    min-height: 97px;
+    .menu
+    {
+        width: 545px;
+        @include flex($ai: center, $jc: space-between);
+        &__link
+        {
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 23px;
+            color: $active-link-color;
+            opacity: 0.5;
+        }
+        .active
+        {
+            opacity: 1;
+        }
+    }
+}
