@@ -97,6 +97,9 @@ button {
 .header .menu .active {
   opacity: 1;
 }
+.header .menu .hamburger {
+  display: none;
+}
 
 .healthcare {
   padding: 80px 0 190px;
@@ -155,7 +158,7 @@ button {
 }
 .services__cards {
   position: relative;
-  width: 1120px;
+  max-width: 1120px;
   margin: 80px auto 0;
   display: grid;
   grid-template-columns: repeat(3, minmax(auto, 350px));
@@ -298,8 +301,8 @@ button {
 }
 .feedback__customer {
   position: relative;
-  width: 1120px;
-  height: 425px;
+  max-width: 1120px;
+  min-height: 425px;
   padding: 64px 116px 79px 120px;
   background: linear-gradient(208.18deg, #67C3F3 9.05%, #5A98F2 76.74%);
   border-radius: 24px;
@@ -369,7 +372,7 @@ button {
 .articles__news {
   position: relative;
   margin: 0 auto;
-  width: 1120px;
+  max-width: 1120px;
   z-index: 10;
   display: flex;
   flex-direction: row;
@@ -419,7 +422,7 @@ button {
 .footer {
   padding: 109px 0;
   position: relative;
-  height: 451px;
+  min-height: 451px;
   background: linear-gradient(183.41deg, #67C3F3 -8.57%, #5A98F2 82.96%);
   overflow: hidden;
 }
@@ -467,4 +470,155 @@ button {
   font-size: 18px;
   line-height: 38px;
   color: #fff;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 960px;
+  }
+  .healthcare-img, .providers-img, .mobile__img {
+    width: 500px;
+  }
+  .services__cards {
+    grid-template-columns: repeat(2, minmax(auto, 350px));
+    place-content: center;
+  }
+  .providers .flex-container {
+    gap: 55px;
+  }
+  .mobile .flex-container {
+    margin-left: 0;
+  }
+  .feedback__customer {
+    padding: 40px 50px 40px 50px;
+  }
+  .articles {
+    padding-top: 240px;
+  }
+  .articles__news {
+    justify-content: space-evenly;
+    gap: 40px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .container {
+    width: 720px;
+  }
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+  }
+  .header .flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav {
+    display: none;
+  }
+  .hamburger {
+    width: 30px;
+    height: 22px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: space-between;
+    transition: rotate 0.8s ease-in;
+  }
+  .hamburger span {
+    width: 100%;
+    height: 2px;
+    background-color: #458FF6;
+  }
+  .footer .flex-container {
+    min-height: 451px;
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 767px) {
+  .container {
+    width: 540px;
+  }
+  .services__card {
+    padding: 40px 25px 40px 25px;
+  }
+  .services__card-title {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+    color: #000000;
+  }
+  .services__card-bg {
+    top: -170px;
+    left: -170px;
+  }
+  .services__btn {
+    margin: 60px auto 0;
+  }
+}
+@media screen and (max-width: 576px) {
+  .container {
+    width: 300px;
+  }
+  .btn {
+    margin: 0 auto;
+  }
+  .healthcare__title {
+    width: auto;
+    font-size: 36px;
+    line-height: 48px;
+  }
+  .services__cards {
+    grid-template-columns: repeat(1, minmax(auto, 350px));
+    margin-bottom: 60px;
+  }
+  .providers .flex-container {
+    justify-content: flex-start;
+  }
+  .providers__title {
+    width: 300px;
+    line-height: 48px;
+  }
+  .providers__text {
+    width: auto;
+  }
+  .mobile .flex-container {
+    justify-content: flex-start;
+  }
+  .mobile__title {
+    min-width: auto;
+    line-height: 48px;
+  }
+  .mobile__text {
+    width: auto;
+  }
+  .feedback__customer-text {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .feedback__customer-info {
+    justify-content: center;
+  }
+  .feedback__customer-info__name {
+    line-height: 32px;
+  }
+  .feedback__customer-info__pos {
+    line-height: 32px;
+  }
+  .articles__title {
+    line-height: 48px;
+  }
+  .articles__news {
+    margin-bottom: 60px;
+  }
+  .footer__about {
+    margin-right: 0;
+  }
 }/*# sourceMappingURL=style.css.map */

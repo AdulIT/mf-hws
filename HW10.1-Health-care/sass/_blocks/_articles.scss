@@ -31,9 +31,9 @@
     {
         position: relative;
         margin: 0 auto;
-        width: 1120px;
+        max-width: 1120px;
         z-index: 10;
-        @include flex($ai: center, $jc: space-between);
+        @include flex($ai: center, $jc: space-between, $fw: wrap);
         &-card
         {
             position: relative;

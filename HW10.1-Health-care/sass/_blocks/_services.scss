@@ -2,10 +2,6 @@
 {
     padding: 0 0 221px;
     min-height: 1132px;
-    // .container
-    // {
-    //     position: relative;
-    // }
     &__title
     {
         @include title;
@@ -25,7 +21,7 @@
     &__cards
     {
         position: relative;
-        width: 1120px;
+        max-width: 1120px;
         margin: 80px auto 0;
         display: grid;
         grid-template-columns: repeat(3, minmax(auto, 350px));
