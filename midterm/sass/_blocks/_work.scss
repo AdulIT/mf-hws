@@ -5,7 +5,7 @@
     &-wrapper
     {
         @include flex($ai: center, $jc: space-between);
-        height: 480px;
+        min-height: 480px;
         &:first-child
         {
             margin-bottom: 120px;

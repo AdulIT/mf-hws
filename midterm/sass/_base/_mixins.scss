@@ -1,4 +1,4 @@
-@mixin flex($fd: row, $fw: wrap, $ai: start, $jc: start)
+@mixin flex($fd: row, $fw: wrap, $ai: flex-start, $jc: flex-start)
 {
     display: flex;
     flex-direction: $fd;

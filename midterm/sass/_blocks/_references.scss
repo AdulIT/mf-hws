@@ -1,8 +1,9 @@
 .references
 {
-    padding: 59px 165px;
+    padding: 59px 0 165px;
     text-align: center;
     background: #F4F5F7;
+    min-height: 603px;
     &__title
     {
         @include title($fz: 64px, $lh: 76px, $color: #18191F);
@@ -14,10 +15,8 @@
     }
     &-wrapper
     {
-        // width: 946px;
-        height: 336px;
+        min-height: 336px;
         @include flex($fw: wrap, $jc: center, $ai: center);
-        display: flex;
         gap: 24px;
     }
     &-alone
@@ -44,6 +43,7 @@
         height: 96px;
         background: #fff;
         border-radius: 16px;
+        box-shadow: 0px 30px 40px rgba(212, 217, 232, 0.2);
         @include flex($jc: center, $ai: center);
         .alone
         {
