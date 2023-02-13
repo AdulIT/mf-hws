@@ -1,0 +1,33 @@
+@mixin flex($fd: row, $fw: wrap, $ai: start, $jc: start)
+{
+    display: flex;
+    flex-direction: $fd;
+    flex-wrap: $fw;
+    align-items: $ai;
+    justify-content: $jc;
+}
+
+@mixin title($fz: 36px, $lh: 56px, $color: #000)
+{
+    font-weight: 800;
+    font-size: $fz;
+    line-height: $lh;
+    color: $color;
+}
+
+@mixin text($fw: 400, $fz: 18px, $lh: 30px, $color: #fff)
+{
+    font-weight: $fw;
+    font-size: $fz;
+    line-height: $lh;
+    color: $color;
+}
+
+@mixin btn($w: 160px, $h: 48px, $br: 8px, $padding: 12px 58px)
+{
+    width: $w;
+    height: $h;
+    padding: $padding;
+    background: $main-color;
+    border-radius: $br;
+}

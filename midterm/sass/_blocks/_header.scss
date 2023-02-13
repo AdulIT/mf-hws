@@ -1,0 +1,23 @@
+.header
+{
+    padding: 45px 0;
+    .menu
+    {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        gap: 40px;
+        &__link
+        {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 20px;
+            color: #000000;
+        }
+        &__btn
+        {
+            @include btn($w: 91px, $h: 40px, $br: 5px, $padding: 10px 20px);
+            @include text($fz: 14px, $lh: 20px, $fw: 400);
+        }
+    }
+}

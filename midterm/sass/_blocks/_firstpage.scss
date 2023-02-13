@@ -1,0 +1,47 @@
+.firstpage
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 200px;
+    width: 100%;
+    min-height: 754px;
+    background: url('../img/main-bg.jpg') center center/cover no-repeat;
+    z-index: -1;
+    &__title
+    {
+        width: 665px;
+        @include title($fz: 64px, $lh: 82px);
+    }
+    &__descr
+    {
+        margin: 20px 0 50px;
+        width: 650px;
+        @include text($fz: 20px, $lh: 36px, $color: #000);
+        letter-spacing: 0.2px;
+    }
+    &-registration
+    {
+        width: 502px;
+        height: 73px;
+        position: relative;
+        @include flex;
+        &__input
+        {
+            width: 100%;
+            padding: 19px 0 18px 32px;
+            border-radius: 8px;
+            background: #fff;
+            @include text($fz: 16px, $lh: 36px, $color: rgba(0, 0, 0, 0.4));
+        }
+        &__btn
+        {
+            position: absolute;
+            top: 6px;
+            right: 6px;
+            @include btn($w: 136px, $h: 61px, $br: 8px, $padding: 12px 38px 12px 37px);
+            @include text($fz: 16px, $lh: 36px, $fw: 700);
+            letter-spacing: 0.2px;
+        }
+    }
+}
