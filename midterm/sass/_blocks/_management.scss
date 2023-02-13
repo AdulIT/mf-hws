@@ -1,0 +1,39 @@
+.management
+{
+    min-height: 1053px;
+    padding: 120px 20px 140px 19px;
+    &__title
+    {
+        @include title($fz: 36px, $lh: 49px);
+        text-align: center;
+    }
+    &__descr
+    {
+        margin: 30px 0 90px;
+        @include text($fz: 24px, $lh: 40px, $color: #000);
+        text-align: center;
+        letter-spacing: 0.2px;
+    }
+    &__processes
+    {
+        @include flex($jc: space-between, $ai: center);
+        min-height: 508px;
+        gap: 91px 116px;
+    }
+    &__process
+    {
+        width: 298px;
+        max-width: 316px;
+        height: 210px;
+        text-align: center;
+        &-title
+        {
+            margin: 10px 0;
+            @include title($fz: 24px, $lh: 33px);
+        }
+        &-descr
+        {
+            @include text($fz: 18px, $lh: 28px);
+        }
+    }
+}

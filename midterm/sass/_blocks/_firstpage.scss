@@ -1,13 +1,8 @@
 .firstpage
 {
-    position: absolute;
-    top: 0;
-    left: 0;
     padding-top: 200px;
-    width: 100%;
     min-height: 754px;
     background: url('../img/main-bg.jpg') center center/cover no-repeat;
-    z-index: -1;
     &__title
     {
         width: 665px;
@@ -40,7 +35,7 @@
             top: 6px;
             right: 6px;
             @include btn($w: 136px, $h: 61px, $br: 8px, $padding: 12px 38px 12px 37px);
-            @include text($fz: 16px, $lh: 36px, $fw: 700);
+            @include text($fz: 16px, $lh: 36px, $fw: 700, $color: #fff);
             letter-spacing: 0.2px;
         }
     }

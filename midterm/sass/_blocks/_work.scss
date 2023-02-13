@@ -1,0 +1,32 @@
+.work
+{
+    min-height: 1080px;
+    padding: 160px 0;
+    &-wrapper
+    {
+        @include flex($ai: center, $jc: space-between);
+        height: 480px;
+        &:first-child
+        {
+            margin-bottom: 120px;
+        }
+    }
+    &-text
+    {
+        width: 523px;
+        &__title
+        {
+            @include title($fz: 64px, $lh: 76px, $color: #2E2E2E);
+        }
+        &__descr
+        {
+            margin: 40px 0 80px;
+            @include text($fz: 16px, $lh: 32px, $color: #808080);
+        }
+        &__btn
+        {
+            @include btn;
+            @include text($fz: 14px, $lh: 24px, $fw: 600, $color: #fff);
+        }
+    }
+}

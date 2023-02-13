@@ -1,0 +1,43 @@
+.footer
+{
+    padding: 80px 0 70px;
+    background: $main-color;
+    font-family: 'Inter', sans-serif;
+    &-wrapper
+    {
+        @include flex($fw: wrap, $jc: space-between);
+        margin-bottom: 50px;
+    }
+    .social
+    {
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 0;
+    }
+    &-items
+    {
+        @include flex($fw: wrap, $fd: column);
+        gap: 24px;
+        &__item
+        {
+            @include text($fz: 16px, $lh: 32px, $color: #fff);
+        }
+        .main
+        {
+            @include title($fw: 700, $fz: 16px, $lh: 24px, $color: #fff);
+        }
+    }
+    &-copyright
+    {
+        @include text($fz: 16px, $lh: 32px, $color: #fff);
+    }
+    &-socials
+    {
+        display: flex;
+        gap: 16px;
+        &__social
+        {
+            cursor: pointer;
+        }
+    }
+}

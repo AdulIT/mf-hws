@@ -1,0 +1,53 @@
+.references
+{
+    padding: 59px 165px;
+    text-align: center;
+    background: #F4F5F7;
+    &__title
+    {
+        @include title($fz: 64px, $lh: 76px, $color: #18191F);
+    }
+    &__descr
+    {
+        margin: 5px 0 48px;
+        @include text($fz: 18px, $lh: 32px, $color: #18191F);
+    }
+    &-wrapper
+    {
+        // width: 946px;
+        height: 336px;
+        @include flex($fw: wrap, $jc: center, $ai: center);
+        display: flex;
+        gap: 24px;
+    }
+    &-alone
+    {
+        @include flex($fd: column, $jc: center, $ai: start, $fw: wrap);
+        .end
+        {
+            align-items: end;
+        }
+    }
+    &-double
+    {
+        @include flex($fd: column, $jc: center, $ai: start, $fw: wrap);
+        gap: 24px;
+    }
+    &-triple
+    {
+        @include flex($fd: column, $jc: center, $ai: start, $fw: wrap);
+        gap: 24px;
+    }
+    &-reference
+    {
+        width: 170px;
+        height: 96px;
+        background: #fff;
+        border-radius: 16px;
+        @include flex($jc: center, $ai: center);
+        .alone
+        {
+            align-self: stretch;
+        }
+    }
+}

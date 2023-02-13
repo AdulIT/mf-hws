@@ -1,0 +1,51 @@
+.testing
+{
+    min-height: 376px;
+    padding: 68px 174px 78px 178px;
+    text-align: center;
+    background: $main-color;
+    &__title
+    {
+        @include title($fz: 48px, $lh: 64px, $color: #fff);
+    }
+    &__descr
+    {
+        margin: 8px 0 64px;
+        @include text($fz: 18px, $lh: 32px, $color: #fff);
+    }
+    &-tests
+    {
+        min-height: 62px;
+        @include flex($ai: center, $jc: space-between);
+        gap: 49px;
+        &__test
+        {
+            display: flex;
+            align-items: center;
+            width: 224px;
+            gap: 46px;
+            @include text($fz: 18px, $lh: 31px, $color: #fff);
+            text-align: left;
+            &:after
+            {
+                content: url('../icons/circle-double-right.svg');
+                display: inline-block;
+                width: 32px;
+                height: 32px;
+            }
+            &:nth-child(2)
+            {
+                width: 277px;
+            }
+            &:nth-child(3)
+            {
+                width: 258px;
+            }
+            &:last-child::after
+            {
+                width: 182px;
+                display: none;
+            }
+        }
+    }
+}
